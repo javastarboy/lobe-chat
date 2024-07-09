@@ -7,14 +7,15 @@ import pkg from '../../package.json';
 import { INBOX_SESSION_ID } from './session';
 
 export const OFFICIAL_URL = 'https://chat-preview.lobehub.com/';
-export const OFFICIAL_SITE = 'https://lobehub.com/';
+export const OFFICIAL_SITE = 'https://www.yuque.com/lhyyh/ai/readme?singleDoc';
 
 export const getCanonicalUrl = (path: string) => urlJoin(OFFICIAL_URL, path);
 
 export const OG_URL = '/og/cover.png?v=1';
 
 export const GITHUB = pkg.homepage;
-export const GITHUB_ISSUES = urlJoin(GITHUB, 'issues/new/choose');
+// 第二个参数调整前为：issues/new/choose
+export const GITHUB_ISSUES = urlJoin(GITHUB, '/');
 export const CHANGELOG = urlJoin(GITHUB, 'blob/main/CHANGELOG.md');
 export const DOCKER_IMAGE = 'https://hub.docker.com/r/lobehub/lobe-chat';
 
@@ -51,8 +52,8 @@ export const SESSION_CHAT_URL = (id: string = INBOX_SESSION_ID, mobile?: boolean
 export const imageUrl = (filename: string) => withBasePath(`/images/${filename}`);
 
 export const LOBE_URL_IMPORT_NAME = 'settings';
-export const EMAIL_SUPPORT = 'support@lobehub.com';
-export const EMAIL_BUSINESS = 'hello@lobehub.com';
+export const EMAIL_SUPPORT = 'https://work.weixin.qq.com/ca/cawcde525445083bde';
+export const EMAIL_BUSINESS = 'https://work.weixin.qq.com/ca/cawcde525445083bde';
 
 export const MEDIDUM = 'https://medium.com/@lobehub';
 export const X = 'https://x.com/lobehub';

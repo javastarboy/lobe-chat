@@ -101,7 +101,7 @@ export const useAppearance = () => {
     baseTheme: isDarkMode ? dark : undefined,
     elements: styles,
     layout: {
-      helpPageUrl: 'https://lobehub.com/docs',
+      helpPageUrl: 'https://www.yuque.com/lhyyh/ai/egfguxs2xbqdytl7?singleDoc',
       privacyPageUrl: 'https://lobehub.com/privacy',
       socialButtonsVariant: 'blockButton',
       termsPageUrl: 'https://lobehub.com/terms',
