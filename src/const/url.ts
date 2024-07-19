@@ -6,7 +6,10 @@ import { withBasePath } from '@/utils/basePath';
 import pkg from '../../package.json';
 import { INBOX_SESSION_ID } from './session';
 
-export const OFFICIAL_URL = 'https://chat-preview.lobehub.com/';
+export const UTM_SOURCE = 'chat_preview';
+
+export const OFFICIAL_URL = 'https://www.jsbcp-1.top/';
+export const OFFICIAL_PREVIEW_URL = 'https://www.jsbcp-1.top/';
 export const OFFICIAL_SITE = 'https://www.yuque.com/lhyyh/ai/egfguxs2xbqdytl7?singleDoc';
 
 export const getCanonicalUrl = (path: string) => urlJoin(OFFICIAL_URL, path);
@@ -22,6 +25,10 @@ export const DOCKER_IMAGE = 'https://hub.docker.com/r/lobehub/lobe-chat';
 export const DOCUMENTS = urlJoin(OFFICIAL_SITE, '/docs');
 export const USAGE_DOCUMENTS = urlJoin(DOCUMENTS, '/usage');
 export const SELF_HOSTING_DOCUMENTS = urlJoin(DOCUMENTS, '/self-hosting');
+export const WEBRTC_SYNC_DOCUMENTS = urlJoin(SELF_HOSTING_DOCUMENTS, '/advanced/webrtc');
+
+// use this for the link
+export const DOCUMENTS_REFER_URL = `${DOCUMENTS}?utm_source=${UTM_SOURCE}`;
 
 export const WIKI = urlJoin(GITHUB, 'wiki');
 export const WIKI_PLUGIN_GUIDE = urlJoin(USAGE_DOCUMENTS, '/plugins/development');
