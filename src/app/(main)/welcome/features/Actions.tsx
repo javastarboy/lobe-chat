@@ -15,6 +15,9 @@ const Actions = memo<{ mobile?: boolean }>(({ mobile }) => {
   const { t } = useTranslation('welcome');
   const router = useRouter();
   const { showMarket } = useServerConfigStore(featureFlagsSelectors);
+  const handleClick = () => {
+    window.location.href = 'https://javastarboy.com/';
+  };
 
   return (
     <Flexbox gap={16} horizontal={!mobile} justify={'center'} width={'100%'} wrap={'wrap'}>
@@ -37,19 +40,9 @@ const Actions = memo<{ mobile?: boolean }>(({ mobile }) => {
           <Icon icon={SendHorizonal} />
         </Flexbox>
       </Button>
-      <Button
-        block={mobile}
-        // onClick={() => router.push('/chat')}
-        onClick={() => window.location.href = 'https://javastarboy.com/'}
-        size={'large'}
-        style={{ minWidth: 160 }}
-        type={'primary'}
-      >
-        <Flexbox align={'center'} gap={4} horizontal justify={'center'}>
-          {t('前往领航AGI')}
-          <Icon icon={SendHorizonal} />
-        </Flexbox>
-      </Button>
+
+      <Button onClick={handleClick}>前往领航AGI</Button>
+
     </Flexbox>
   );
 });
