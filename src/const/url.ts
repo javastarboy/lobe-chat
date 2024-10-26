@@ -9,8 +9,8 @@ import { INBOX_SESSION_ID } from './session';
 
 export const UTM_SOURCE = 'chat_preview';
 
-export const OFFICIAL_URL = 'https://www.jsbcp-1.top/';
-export const OFFICIAL_PREVIEW_URL = 'https://www.jsbcp-1.top/';
+export const OFFICIAL_URL = 'https://javastarboy.com/';
+export const OFFICIAL_PREVIEW_URL = 'https://javastarboy.com/';
 export const OFFICIAL_SITE = 'https://www.yuque.com/lhyyh/ai/egfguxs2xbqdytl7?singleDoc';
 
 export const OG_URL = '/og/cover.png?v=1';
