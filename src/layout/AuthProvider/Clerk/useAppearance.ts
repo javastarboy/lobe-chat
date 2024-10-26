@@ -4,6 +4,8 @@ import { dark } from '@clerk/themes';
 import { ElementsConfig, Theme } from '@clerk/types';
 import { createStyles, useThemeMode } from 'antd-style';
 
+import { BRANDING_URL } from '@/const/branding';
+
 const prefixCls = 'cl';
 
 export const useStyles = createStyles(
@@ -104,7 +106,7 @@ export const useAppearance = () => {
       helpPageUrl: 'https://www.yuque.com/lhyyh/ai/egfguxs2xbqdytl7?singleDoc',
       privacyPageUrl: 'https://lobehub.com/privacy',
       socialButtonsVariant: 'blockButton',
-      termsPageUrl: 'https://lobehub.com/terms',
+      termsPageUrl: BRANDING_URL.terms ?? 'https://lobehub.com/terms',
     },
     variables: {
       borderRadius: `${theme.borderRadius}px`,
