@@ -52,6 +52,8 @@ describe('modelProviderSelectors', () => {
       expect(result).toEqual([
         'o1-mini',
         'o1-preview',
+        'o1-mini-all',
+        'o1-preview-all',
         'gpt-4o-mini',
         'gpt-4o',
         'chatgpt-4o-latest',
