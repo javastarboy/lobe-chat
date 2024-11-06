@@ -5,6 +5,34 @@ const OpenAI: ModelProviderCard = {
   chatModels: [
     {
       description:
+        'o1-mini-all 是一款针对编程、数学和科学应用场景而设计的快速、经济高效的推理模型。该模型具有128K上下文和2023年10月的知识截止日期。。支持thinking展示',
+      displayName: 'OpenAI o1-mini-all',
+      enabled: true,
+      id: 'o1-mini-all',
+      maxOutput: 65_536,
+      pricing: {
+        input: 75,
+        output: 75,
+      },
+      releasedAt: '2024-09-12',
+      tokens: 128_000,
+    },
+    {
+      description:
+        'o1是OpenAI新的推理模型，适用于需要广泛通用知识的复杂任务。该模型具有128K上下文和2023年10月的知识截止日期。支持thinking展示',
+      displayName: 'OpenAI o1-preview-all',
+      enabled: true,
+      id: 'o1-preview-all',
+      maxOutput: 32_768,
+      pricing: {
+        input: 150,
+        output: 150,
+      },
+      releasedAt: '2024-09-12',
+      tokens: 128_000,
+    },
+    {
+      description:
         'o1-mini是一款针对编程、数学和科学应用场景而设计的快速、经济高效的推理模型。该模型具有128K上下文和2023年10月的知识截止日期。',
       displayName: 'OpenAI o1-mini',
       enabled: true,
