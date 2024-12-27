@@ -54,7 +54,6 @@ const OpenRouter: ModelProviderCard = {
         output: 75,
       },
       releasedAt: '2024-09-12',
-      tokens: 128_000,
     },
     {
       description:
@@ -68,7 +67,6 @@ const OpenRouter: ModelProviderCard = {
         output: 150,
       },
       releasedAt: '2024-09-12',
-      tokens: 128_000,
     },
     {
       description:
