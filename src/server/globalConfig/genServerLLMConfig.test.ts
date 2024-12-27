@@ -1,8 +1,8 @@
 import { describe, expect, it, vi } from 'vitest';
 
-import { genServerLLMConfig } from './genServerLLMConfig';
-
 import { getLLMConfig } from '@/config/llm';
+
+import { genServerLLMConfig } from './genServerLLMConfig';
 
 // Mock ModelProvider enum
 vi.mock('@/libs/agent-runtime', () => ({
@@ -10,7 +10,7 @@ vi.mock('@/libs/agent-runtime', () => ({
     Azure: 'azure',
     Bedrock: 'bedrock',
     Ollama: 'ollama',
-  }
+  },
 }));
 
 // Mock ProviderCards
@@ -67,7 +67,7 @@ describe('genServerLLMConfig', () => {
         modelListKey: 'AWS_BEDROCK_MODEL_LIST',
       },
       ollama: {
-        fetchOnClient: !getLLMConfig().OLLAMA_PROXY_URL,
+        fetchOnClient: !process.env.OLLAMA_PROXY_URL,
       },
     };
     const config = genServerLLMConfig(specificConfig);
@@ -86,7 +86,7 @@ describe('genServerLLMConfig', () => {
 
     expect(config.ollama).toEqual({
       enabled: true,
-      enabledModels: ['ollamaModels'], 
+      enabledModels: ['ollamaModels'],
       fetchOnClient: true,
       serverModelCards: ['ollamaModel1', 'ollamaModel2'],
     });
