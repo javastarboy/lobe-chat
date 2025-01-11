@@ -12,14 +12,19 @@ tags:
 ---
 
 # 在 Dokploy 上部署服务端数据库版
+
 本文将详细介绍如何在 Dokploy 中部署服务端数据库版 LobeChat。
+
 ## 一、准备工作
+
 ### 部署 Dokploy 并进行相关设置
+
 ```shell
 curl -sSL https://dokploy.com/install.sh | sh
 ```
+
 1. 在 Dokploy 的 Settings / Git 处根据提示将 Github 绑定到 Dokploy
-   
+
 ![](https://github.com/user-attachments/assets/c75eb19e-e0f5-4135-91e4-55be8be8a996)
 
 2. 进入 Projects 界面创建一个 Project
@@ -107,6 +112,7 @@ OPENAI_API_KEY=
 OPENAI_MODEL_LIST=
 OPENAI_PROXY_URL=
 ```
+
 添加完环境变量并保存后，点击 Deploy 进行部署，你可以在 Deployments 处查看部署进程及日志信息
 
 ![](https://github.com/user-attachments/assets/411e2002-61f0-4010-9841-18e88ca895ec)
@@ -116,7 +122,7 @@ OPENAI_PROXY_URL=
 ![](https://github.com/user-attachments/assets/dd6bc4a4-3c20-4162-87fd-5cac57e5d7e7)
 
 ## 验证 LobeChat 是否正常工作
+
 进入你的 LobeChat 网址，如果你点击左上角登录，可以正常显示登录弹窗，那么说明你已经配置成功了，尽情享用吧～
 
 ![](https://github.com/user-attachments/assets/798ddb18-50c7-462a-a083-0c6841351d26)
-
